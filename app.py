@@ -80,7 +80,7 @@ p, .stMarkdown {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Hati berjatuhan */
+/* Hati berjatuhan (background) */
 .heart {
     position: fixed;
     top: -10%;
@@ -89,13 +89,28 @@ p, .stMarkdown {
     animation: fall linear infinite;
     z-index: 0;
     opacity: 0.7;
+    pointer-events: none;
 }
 @keyframes fall {
     to { transform: translateY(110vh) rotate(360deg); }
 }
+
+/* Love rain pas tombol diklik */
+.love-rain {
+    position: fixed;
+    top: -10%;
+    font-size: 2rem;
+    animation: loveFall linear infinite;
+    z-index: 9999;
+    pointer-events: none;
+}
+@keyframes loveFall {
+    0%   { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(110vh) rotate(360deg); opacity: 0.8; }
+}
 </style>
 
-<!-- Hati berjatuhan -->
+<!-- Hati berjatuhan (background) -->
 <div class="heart" style="left:10%; animation-duration:6s;">💗</div>
 <div class="heart" style="left:25%; animation-duration:8s; animation-delay:1s;">💕</div>
 <div class="heart" style="left:45%; animation-duration:7s; animation-delay:2s;">💖</div>
@@ -104,7 +119,6 @@ p, .stMarkdown {
 """, unsafe_allow_html=True)
 
 # ====== MUSIK (opsional) ======
-# Taruh file lagu.mp3 di folder yang sama
 def autoplay_audio(file_path):
     try:
         with open(file_path, "rb") as f:
@@ -122,32 +136,44 @@ def autoplay_audio(file_path):
 # autoplay_audio("lagu.mp3")  # uncomment kalau ada musik
 
 # ====== KONTEN ======
-st.markdown("<h1>💌 </h1>", unsafe_allow_html=True)
-st.markdown("<p></p>", unsafe_allow_html=True)
+st.markdown("<h1>💌 Untuk Kamu</h1>", unsafe_allow_html=True)
+st.markdown("<p>Ada sesuatu nih... pencet tombolnya ya 👇</p>", unsafe_allow_html=True)
 
 # Tombol buka surat
-if st.button("Buka  💖"):
+if st.button("Buka Surat 💖"):
     st.balloons()
     time.sleep(0.5)
-    
+
     st.markdown("""
     <div class="letter-card">
         <p style="font-family:'Dancing Script',cursive; font-size:2rem; color:#d6336c; margin-bottom:20px;">
             untuk jessie,
         </p>
         <p>
-            Thank you ya uda mau percaya cerita cerita gua sama nahan ua sering yapping atau ga ngajak ribut hehe.
+            Thank you ya uda mau percaya cerita cerita gua sama nahan gua sering yapping atau ga ngajak ribut hehe.
         </p>
         <p>
-           Lain kali kalo ada masalah cerita aja yaa jangan dipendem mulu sendirian kalo malu anggap aja gua tembok yang bisa ngomong ajaa.
+            Lain kali kalo ada masalah cerita aja yaa jangan dipendem mulu sendirian kalo malu anggap aja gua tembok yang bisa ngomong ajaa.
         </p>
         <p style="font-size:1.3rem; font-weight:500; color:#d6336c; margin-top:25px;">
-             🌷
+            🌷
         </p>
         <p style="margin-top:20px; font-style:italic;">
             — dari zosimo 😝😝😝
         </p>
     </div>
     """, unsafe_allow_html=True)
-    
-    st.snow()  # efek salju (opsional, bisa diganti)
+
+
+    st.markdown("""
+    <div class="love-rain" style="left:5%;  animation-duration:4s;   animation-delay:0s;">❤️</div>
+    <div class="love-rain" style="left:15%; animation-duration:5s;   animation-delay:0.5s;">💖</div>
+    <div class="love-rain" style="left:25%; animation-duration:3.5s; animation-delay:1s;">💕</div>
+    <div class="love-rain" style="left:35%; animation-duration:6s;   animation-delay:0.2s;">💗</div>
+    <div class="love-rain" style="left:45%; animation-duration:4.5s; animation-delay:1.5s;">❤️</div>
+    <div class="love-rain" style="left:55%; animation-duration:5.5s; animation-delay:0.8s;">💘</div>
+    <div class="love-rain" style="left:65%; animation-duration:3.8s; animation-delay:2s;">💖</div>
+    <div class="love-rain" style="left:75%; animation-duration:4.2s; animation-delay:0.3s;">💕</div>
+    <div class="love-rain" style="left:85%; animation-duration:5.2s; animation-delay:1.2s;">💗</div>
+    <div class="love-rain" style="left:95%; animation-duration:3.9s; animation-delay:1.8s;">❤️</div>
+    """, unsafe_allow_html=True)
