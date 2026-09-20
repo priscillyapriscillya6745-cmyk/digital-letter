@@ -133,21 +133,19 @@ if st.button("Buka  💖"):
     st.markdown("""
     <div class="letter-card">
         <p style="font-family:'Dancing Script',cursive; font-size:2rem; color:#d6336c; margin-bottom:20px;">
-            Hai Kamu,
+            untuk jessie,
         </p>
         <p>
-            Aku sebenernya udah lama pengen ngomong ini,
-            tapi selalu gak tau caranya.
+            Thank you ya uda mau percaya cerita cerita gua sama nahan ua sering yapping atau ga ngajak ribut hehe.
         </p>
         <p>
-            Tiap kali ketemu kamu, hari aku jadi lebih cerah.
-            Ketawa kamu itu... bikin aku lupa sama hal-hal yang bikin capek.
+           Lain kali kalo ada masalah cerita aja yaa jangan dipendem mulu sendirian kalo malu anggap aja gua tembok yang bisa ngomong ajaa.
         </p>
         <p style="font-size:1.3rem; font-weight:500; color:#d6336c; margin-top:25px;">
-            Aku suka sama kamu. 🌷
+             🌷
         </p>
         <p style="margin-top:20px; font-style:italic;">
-            — dari aku, yang diam-diam memperhatikanmu
+            — dari zosimo 😝😝😝
         </p>
     </div>
     """, unsafe_allow_html=True)
