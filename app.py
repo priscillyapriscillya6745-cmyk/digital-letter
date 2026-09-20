@@ -136,8 +136,8 @@ def autoplay_audio(file_path):
 # autoplay_audio("lagu.mp3")  # uncomment kalau ada musik
 
 # ====== KONTEN ======
-st.markdown("<h1>💌 Untuk Kamu</h1>", unsafe_allow_html=True)
-st.markdown("<p>Ada sesuatu nih... pencet tombolnya ya 👇</p>", unsafe_allow_html=True)
+st.markdown("<h1>💌 </h1>", unsafe_allow_html=True)
+st.markdown("<p></p>", unsafe_allow_html=True)
 
 # Tombol buka surat
 if st.button("Buka Surat 💖"):
