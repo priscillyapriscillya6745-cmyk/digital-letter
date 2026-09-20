@@ -2,7 +2,7 @@ import streamlit as st
 import base64
 import time
 
-st.set_page_config(page_title="Digital letter untuk jessie 💌", page_icon="💌", layout="centered")
+st.set_page_config(page_title="Untuk Kamu 💌", page_icon="💌", layout="centered")
 
 # ====== CSS CUSTOM ======
 st.markdown("""
@@ -136,12 +136,11 @@ def autoplay_audio(file_path):
 # autoplay_audio("lagu.mp3")  # uncomment kalau ada musik
 
 # ====== KONTEN ======
-st.markdown("<h1>💌 </h1>", unsafe_allow_html=True)
+st.markdown("<h1>💌</h1>", unsafe_allow_html=True)
 st.markdown("<p></p>", unsafe_allow_html=True)
 
 # Tombol buka surat
 if st.button("Buka Surat 💖"):
-    st.balloons()
     time.sleep(0.5)
 
     st.markdown("""
@@ -164,16 +163,36 @@ if st.button("Buka Surat 💖"):
     </div>
     """, unsafe_allow_html=True)
 
-
+    # efek love
     st.markdown("""
-    <div class="love-rain" style="left:5%;  animation-duration:4s;   animation-delay:0s;">❤️</div>
-    <div class="love-rain" style="left:15%; animation-duration:5s;   animation-delay:0.5s;">💖</div>
-    <div class="love-rain" style="left:25%; animation-duration:3.5s; animation-delay:1s;">💕</div>
-    <div class="love-rain" style="left:35%; animation-duration:6s;   animation-delay:0.2s;">💗</div>
-    <div class="love-rain" style="left:45%; animation-duration:4.5s; animation-delay:1.5s;">❤️</div>
-    <div class="love-rain" style="left:55%; animation-duration:5.5s; animation-delay:0.8s;">💘</div>
-    <div class="love-rain" style="left:65%; animation-duration:3.8s; animation-delay:2s;">💖</div>
-    <div class="love-rain" style="left:75%; animation-duration:4.2s; animation-delay:0.3s;">💕</div>
-    <div class="love-rain" style="left:85%; animation-duration:5.2s; animation-delay:1.2s;">💗</div>
-    <div class="love-rain" style="left:95%; animation-duration:3.9s; animation-delay:1.8s;">❤️</div>
+    <div class="love-rain" style="left:2%;  animation-duration:3.5s; animation-delay:0s;">❤️</div>
+    <div class="love-rain" style="left:7%;  animation-duration:5s;   animation-delay:0.3s;">💖</div>
+    <div class="love-rain" style="left:12%; animation-duration:4.2s; animation-delay:1s;">💕</div>
+    <div class="love-rain" style="left:17%; animation-duration:6s;   animation-delay:0.6s;">💗</div>
+    <div class="love-rain" style="left:22%; animation-duration:3.8s; animation-delay:1.4s;">💘</div>
+    <div class="love-rain" style="left:27%; animation-duration:5.5s; animation-delay:0.2s;">❤️</div>
+    <div class="love-rain" style="left:32%; animation-duration:4.5s; animation-delay:1.8s;">💖</div>
+    <div class="love-rain" style="left:37%; animation-duration:6.2s; animation-delay:0.9s;">💕</div>
+    <div class="love-rain" style="left:42%; animation-duration:3.6s; animation-delay:2.1s;">💗</div>
+    <div class="love-rain" style="left:47%; animation-duration:5.2s; animation-delay:0.4s;">💘</div>
+    <div class="love-rain" style="left:52%; animation-duration:4.8s; animation-delay:1.6s;">❤️</div>
+    <div class="love-rain" style="left:57%; animation-duration:3.9s; animation-delay:0.7s;">💖</div>
+    <div class="love-rain" style="left:62%; animation-duration:5.8s; animation-delay:2.3s;">💕</div>
+    <div class="love-rain" style="left:67%; animation-duration:4.1s; animation-delay:0.5s;">💗</div>
+    <div class="love-rain" style="left:72%; animation-duration:6.1s; animation-delay:1.3s;">💘</div>
+    <div class="love-rain" style="left:77%; animation-duration:3.7s; animation-delay:2s;">❤️</div>
+    <div class="love-rain" style="left:82%; animation-duration:5.3s; animation-delay:0.8s;">💖</div>
+    <div class="love-rain" style="left:87%; animation-duration:4.4s; animation-delay:1.9s;">💕</div>
+    <div class="love-rain" style="left:92%; animation-duration:6.4s; animation-delay:0.1s;">💗</div>
+    <div class="love-rain" style="left:97%; animation-duration:3.4s; animation-delay:1.5s;">💘</div>
+    <div class="love-rain" style="left:10%; animation-duration:4.7s; animation-delay:2.5s;">💝</div>
+    <div class="love-rain" style="left:30%; animation-duration:5.7s; animation-delay:1.1s;">💝</div>
+    <div class="love-rain" style="left:50%; animation-duration:3.3s; animation-delay:2.7s;">💝</div>
+    <div class="love-rain" style="left:70%; animation-duration:4.9s; animation-delay:0.4s;">💝</div>
+    <div class="love-rain" style="left:90%; animation-duration:5.9s; animation-delay:1.7s;">💝</div>
+    <div class="love-rain" style="left:20%; animation-duration:6.3s; animation-delay:2.2s;">💓</div>
+    <div class="love-rain" style="left:40%; animation-duration:3.2s; animation-delay:0.9s;">💓</div>
+    <div class="love-rain" style="left:60%; animation-duration:5.1s; animation-delay:1.4s;">💓</div>
+    <div class="love-rain" style="left:80%; animation-duration:4.3s; animation-delay:2.6s;">💓</div>
+    <div class="love-rain" style="left:55%; animation-duration:6.6s; animation-delay:0.3s;">💞</div>
     """, unsafe_allow_html=True)
