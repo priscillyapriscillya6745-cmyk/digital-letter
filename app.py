@@ -2,7 +2,7 @@ import streamlit as st
 import base64
 import time
 
-st.set_page_config(page_title="Untuk Kamu 💌", page_icon="💌", layout="centered")
+st.set_page_config(page_title="Digital letter untuk jessie 💌", page_icon="💌", layout="centered")
 
 # ====== CSS CUSTOM ======
 st.markdown("""
